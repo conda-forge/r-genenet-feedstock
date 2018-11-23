@@ -14,9 +14,9 @@ source:
   sha256: 3798caac3bef7dc87f97b3628eb29eb12365d571ce0837b5b6285b0be655a270
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -48,8 +48,7 @@ about:
     and Opgen-Rhein and Strimmer (2006, 2007) for learning large-scale gene association
     networks (including assignment of putative directions).  '
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
