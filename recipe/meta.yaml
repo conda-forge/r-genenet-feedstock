@@ -1,4 +1,4 @@
-{% set version = '1.2.13' %}
+{% set version = "1.2.14" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/GeneNet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/GeneNet/GeneNet_{{ version }}.tar.gz
-  sha256: 3798caac3bef7dc87f97b3628eb29eb12365d571ce0837b5b6285b0be655a270
+  sha256: 76f4d1a5954b3060d95017b0108b2f0936fdf38c15e5c1fd051cfc5c82ccb031
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1002
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -56,9 +56,3 @@ extra:
     - MathiasHaudgaard
     - FrodePedersen
     - ArneKr
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
