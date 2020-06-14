@@ -1,4 +1,4 @@
-{% set version = "1.2.14" %}
+{% set version = "1.2.15" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/GeneNet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/GeneNet/GeneNet_{{ version }}.tar.gz
-  sha256: 76f4d1a5954b3060d95017b0108b2f0936fdf38c15e5c1fd051cfc5c82ccb031
+  sha256: 555ac4e1d6c53c099b94b9298b6a8893a07797886a21ce3655a98fa9a1326a85
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,12 +43,9 @@ test:
 about:
   home: http://strimmerlab.org/software/genenet/
   license: GPL (>= 3)
-  summary: 'Analyzes gene expression (time series) data with focus on the inference of gene networks.
-    In particular, GeneNet implements the methods of Schaefer and  Strimmer (2005a,b,c)
-    and Opgen-Rhein and Strimmer (2006, 2007) for learning large-scale gene association
-    networks (including assignment of putative directions).  '
+  summary: 'Analyzes gene expression (time series) data with focus on the inference of gene networks. In particular, GeneNet implements the methods of Schaefer and  Strimmer (2005a,b,c) and Opgen-Rhein and Strimmer (2006, 2007) for learning large-scale gene association networks (including assignment of putative directions).  '
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
