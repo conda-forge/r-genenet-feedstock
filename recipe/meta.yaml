@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: GeneNet_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/GeneNet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/GeneNet/GeneNet_{{ version }}.tar.gz
@@ -42,7 +41,7 @@ test:
 
 about:
   home: http://strimmerlab.org/software/genenet/
-  license: GPL (>= 3)
+  license: GPL-3.0-or-later
   summary: 'Analyzes gene expression (time series) data with focus on the inference of gene networks. In particular, GeneNet implements the methods of Schaefer and  Strimmer (2005a,b,c) and Opgen-Rhein and Strimmer (2006, 2007) for learning large-scale gene association networks (including assignment of putative directions).  '
   license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
