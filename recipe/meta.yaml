@@ -1,4 +1,4 @@
-{% set version = "1.2.15" %}
+{% set version = "1.2.16" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/GeneNet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/GeneNet/GeneNet_{{ version }}.tar.gz
-  sha256: 555ac4e1d6c53c099b94b9298b6a8893a07797886a21ce3655a98fa9a1326a85
+  sha256: c1e98073ccdaa18f4952630bfe4fc0617106eeaf7ed94d347cb2773bd48333e4
 
 build:
   noarch: generic
