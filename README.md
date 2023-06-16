@@ -1,11 +1,11 @@
-About r-genenet
-===============
+About r-genenet-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-genenet-feedstock/blob/main/LICENSE.txt)
 
 Home: http://strimmerlab.org/software/genenet/
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-genenet-feedstock/blob/main/LICENSE.txt)
 
 Summary: Analyzes gene expression (time series) data with focus on the inference of gene networks. In particular, GeneNet implements the methods of Schaefer and  Strimmer (2005a,b,c) and Opgen-Rhein and Strimmer (2006, 2007) for learning large-scale gene association networks (including assignment of putative directions).  
 
