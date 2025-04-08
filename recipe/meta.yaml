@@ -1,4 +1,4 @@
-{% set version = "1.2.16" %}
+{% set version = "1.2.17" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/GeneNet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/GeneNet/GeneNet_{{ version }}.tar.gz
-  sha256: c1e98073ccdaa18f4952630bfe4fc0617106eeaf7ed94d347cb2773bd48333e4
+  sha256: a8083790de1914f7845c7e6a463dc7651ab46f92e996ff096e12d0adb4d07c5f
 
 build:
   noarch: generic
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
